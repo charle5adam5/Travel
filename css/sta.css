@@ -1,0 +1,19 @@
+
+#cover {
+  height: 90vh;
+  width: 90vw;
+  background:     linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ), url(/Users/charlesadams/Desktop/Travel/images/sta.jpg) no-repeat center;
+  background-size: cover;
+  margin:0 auto;
+}
+
+#cover h1 {
+  color: #ffb366;
+  font-family: 'Concert One', cursive;
+  font-size: 3em;
+  padding-top: 20%;
+  padding-left: 5%;
+}

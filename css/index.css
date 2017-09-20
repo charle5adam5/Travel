@@ -1,11 +1,24 @@
 #cover {
-  margin: 0 auto;
-}
-a {
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+a {
+  font-family: 'Concert One', cursive;
+  text-decoration: none;
+  margin-top: 1em;
+  font-size: 2em;
+  color: darkorange;
 }
 img {
+  height: auto;
   width: 50%;
+}
+@media screen (min-width: 400px) {
+  img {
+    width: 20em;
+  }
 }

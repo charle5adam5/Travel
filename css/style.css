@@ -1,44 +1,34 @@
 body {
-    margin-top: 10%;
+    margin-top: 10em;
 }
 
 #title {
   background: white;
-  border-bottom: solid 8px #f2f2f2;
   position:fixed;
   top: 0;
   display: inline-flex;
   width: 100%;
+  border-bottom: solid .5em #E91E63;
 }
 #title img {
   display: inline-block;
-  height: 20%;
-  width: 20%;
+  height: 7em;
+  width: auto;
 }
 
 #locations {
 align-self: center;
-display: inline-flex;
+display: flex;
 justify-content: space-around;
 width: 100%;
-}
-#locations ul {
-   display: flex;
-   width: 100%;
-   justify-content: space-around;
- }
-#locations li {
-  display: inline-flex;
-  list-style: none;
 }
 
 #locations a {
   color: #ffb366;
   text-decoration: none;
 }
-
-#locations li:hover {
-  transform: scale(1.5);
+#locations a:hover {
+  text-decoration: underline;
 }
 
 
@@ -51,67 +41,481 @@ background: white;
 justify-content: space-around;
 width: 100%;
 }
- nav ul {
-   display: flex;
-   width: 100%;
-   justify-content: space-around;
- }
-nav li {
-  display: inline-flex;
-  list-style: none;
-}
 
 nav a {
   color: #ffb366;
   text-decoration: none;
 }
-#places {
-  display: inline-flex;
-  align-items: center;
-}
-#places p {
+
+
+#cover {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  height: 25em;
+  width: 25em;
+  margin:0 auto;
   color: #ffb366;
+  font-family: 'Concert One', cursive;
   font-size: 2em;
-  /*margin-left: 200px;*/
+}
+#cover h1 {
+  margin-left: 1em;
 }
 
- #places img {
-  height: 9%;
-  width: 6%;
-  border-radius: 100%;
-  margin: 1%;
+#places {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  margin-left: 2em;
+  width: 20em;
 }
 
+
+#arrow:after {
+  content: "\27bd";
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
 #arrow:hover {
-  border: solid 2px #ffb366;
   cursor: pointer;
 }
 
 #sights {
   border-radius: 7px;
-  width: 40%;
-  padding-right: 5%;
+  width: 50%;
+  padding: .5em;
+}
+#sights a {
+  font-size: .66em;
+}
+#sights a:hover {
+  text-decoration: underline;
+}
+#sights a:last-of-type {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 900px) {
-  #cover h1 {
+
+#close:after {
+  content: "\2716";
+  border: solid 2px darkorange;
+  border-radius: 4px;
+  padding: 1px;
+}
+#close:hover {
+  cursor: pointer;
+}
+
+/*   Restaurants   */
+#eats1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#eats1 a {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+#eats1 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#eats2 a {
+    display: flex;
+    justify-content: space-around;
+}
+#eats2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+}
+#eats2 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+  margin: 0 auto;
+}
+
+/*   Coffee   */
+
+#coff1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#coff1 a {
+    display: flex;
+    justify-content: space-around;
+}
+#coff1 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+}
+#coff2 a {
+    display: flex;
+    justify-content: space-around;
+}
+#coff2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+}
+#coff2 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+
+}
+
+/*   Shop    */
+
+#shop1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#shop1 a {
+    display: flex;
+    justify-content: space-around;
+}
+#shop1 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+}
+#shop2 a {
+    display: flex;
+    justify-content: space-around;
+}
+#shop2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50em;
+  width: 50em;
+  margin:0 auto;
+}
+#shop2 img {
+  background: white;
+  border: solid 4px #ffb366;
+  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  #cover {
+    height: 20em;
+    width: 20em;
   }
-  #places p {
-    justify-content: center;
+/* eats */
+  #eats1 {
+    height: 45em;
+    width: 45em;
   }
-  #places img {
-  transform: rotate(90deg);
+  #eats1 img {
+    height: 15em;
+    width: 15em;
   }
-  span {
-    display: block;
-    width: 100%;
+  #eats2 {
+    height: 45em;
+    width: 45em;
+  }
+  #eats2 img {
+    height: 15em;
+    width: 15em;
+  }
+
+/* coff */
+  #coff1 {
+    height: 45em;
+    width: 45em;
+  }
+  #coff1 img {
+    height: 15em;
+    width: 15em;
+  }
+  #coff2 {
+    height: 45em;
+    width: 45em;
+  }
+  #coff2 img {
+    height: 15em;
+    width: 15em;
+  }
+
+/* shops */
+  #shop1 {
+    height: 45em;
+    width: 45em;
+  }
+  #shop1 img {
+    height: 15em;
+    width: 15em;
+  }
+  #shop2 {
+    height: 45em;
+    width: 45em;
+  }
+  #shop2 img {
+    height: 15em;
+    width: 15em;
   }
 }
 
-@media screen and (min-width: 900px) {
-  #places p {
-    margin-left: 200px;
+@media screen and (max-width: 750px) {
+  /* eats */
+    #eats1 {
+      height: 40em;
+      width: 40em;
+    }
+    #eats1 img {
+      height: 10em;
+      width: 10em;
+    }
+    #eats2 {
+      height: 40em;
+      width: 40em;
+    }
+    #eats2 img {
+      height: 10em;
+      width: 10em;
+    }
+
+  /* coff */
+    #coff1 {
+      height: 40em;
+      width: 40em;
+    }
+    #coff1 img {
+      height: 10em;
+      width: 10em;
+    }
+    #coff2 {
+      height: 40em;
+      width: 40em;
+    }
+    #coff2 img {
+      height: 10em;
+      width: 10em;
+    }
+
+  /* shops */
+    #shop1 {
+      height: 40em;
+      width: 40em;
+    }
+    #shop1 img {
+      height: 10em;
+      width: 10em;
+    }
+    #shop2 {
+      height: 40em;
+      width: 40em;
+    }
+    #shop2 img {
+      height: 10em;
+      width: 10em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  #title img {
+    height: 5em;
+    width: auto;
+  }
+  #cover {
+    height: 15em;
+    width: 15em;
+  }
+  #cover h1, #cover p {
+    font-size: 1.5em;
+  }
+/* eats */
+  #eats1 {
+    height: 30em;
+    width: 30em;
+  }
+  #eats1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #eats2 {
+    height: 30em;
+    width: 30em;
+  }
+  #eats2 img {
+    height: 7em;
+    width: 7em;
+  }
+
+/* coff */
+  #coff1 {
+    height: 30em;
+    width: 30em;
+  }
+  #coff1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #coff2 {
+    height: 30em;
+    width: 30em;
+  }
+  #coff2 img {
+    height: 7em;
+    width: 7em;
+  }
+
+/* shops */
+  #shop1 {
+    height: 30em;
+    width: 30em;
+  }
+  #shop1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #shop2 {
+    height: 30em;
+    width: 30em;
+  }
+  #shop2 img {
+    height: 7em;
+    width: 7em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  body {
+    margin-top: 17em;
+  }
+  #title {
+    flex-flow: column;
+  }
+  #title img {
+    height: auto;
+    width: 12em;
+    align-self: center;
+  }
+  #title nav {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #title nav a {
+    margin: .75em;
+  }
+  #cover {
+    height: 12em;
+    width: 12em;
+  }
+  #cover h1, #cover p {
+    font-size: 1.25em;
+  }
+  #places {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  #places nav {
+    align-self: flex-start;
+    width: 40%;
+  }
+  #places nav a {
+    font-size: .5em;
+  }
+/* eats */
+  #eats1 {
+    height: 23em;
+    width: 23em;
+  }
+  #eats1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #eats2 {
+    height: 23em;
+    width: 23em;
+  }
+  #eats2 img {
+    height: 7em;
+    width: 7em;
+  }
+
+/* coff */
+  #coff1 {
+    height: 23em;
+    width: 23em;
+  }
+  #coff1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #coff2 {
+    height: 23em;
+    width: 23em;
+  }
+  #coff2 img {
+    height: 7em;
+    width: 7em;
+  }
+
+/* shops */
+  #shop1 {
+    height: 23em;
+    width: 23em;
+  }
+  #shop1 img {
+    height: 7em;
+    width: 7em;
+  }
+  #shop2 {
+    height: 23em;
+    width: 23em;
+  }
+  #shop2 img {
+    height: 7em;
+    width: 7em;
   }
 }

@@ -1,6 +1,9 @@
+
 $("#sights").hide();
 
-
 $("#arrow").click(function() {
-  $("#sights").toggle();
-})
+  $("#sights").show();
+});
+$("#close").click(function() {
+  $("#sights").hide();
+});
